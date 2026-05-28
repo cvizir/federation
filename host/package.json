@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "run-p vite:dev force-vite-restart",
-    "vite:dev": "vite --port 4173",
+    "vite:dev": "vite --port 8887",
     "build": "run-p type-check build-only",
     "preview": "vite preview --port 8887",
     "build-only": "vite build",

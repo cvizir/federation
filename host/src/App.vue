@@ -5,6 +5,10 @@ const RemoteMFE = defineAsyncComponent(
   // @ts-ignore
   () => import("remote/remote-app")
 );
+const RemoteHeader = defineAsyncComponent(
+  // @ts-ignore
+  () => import("remote/header")
+);
 </script>
 
 <template>
@@ -34,6 +38,7 @@ const RemoteMFE = defineAsyncComponent(
     </div>
   </div>
   <RemoteMFE v-if="!!RemoteMFE" />
+  <RemoteHeader v-if="!!RemoteHeader" />
 </template>
 
 <style scoped>
